@@ -36,6 +36,7 @@ main {
 }
 
 .information {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,11 +77,11 @@ main {
     height: 40px;
     .profile {
         position: relative;
-        width: 100%;
-        display: none;
+        display: flex;
         align-items: center;
         padding: 0px;
         height: 40px;
+        margin-top: 32px;
         img {
             border-radius: 100px;
             height: 100%;
@@ -125,12 +126,20 @@ main {
 }
 
 .share-card {
-    display: flex;
+    
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0px;
+    display: none;
     position: relative;
+    position: absolute;
+    bottom: 0px;
     background-color: #48556a;
     align-items: center;
     transition: transform 0.3s ease;
     padding: 22px 32px 22px 32px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     h1 {
         letter-spacing: 5px;
         margin: 0px;
@@ -172,11 +181,6 @@ main {
         margin-left: auto;
         margin-right: auto;
     }
-    .text-box h1 {
-        h1 {
-            font-size: 15rem;
-        }
-    }
 }
 
 @media screen and (max-width:767px) {
@@ -192,6 +196,21 @@ main {
     }
     .information {
         padding-top: 36px;
-        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .text-box {
+        h1 {
+            margin-left: 32px;
+            margin-right: 32px;
+        }
+        p {
+            margin-left: 32px;
+            margin-right: 32px;
+        }
+    }
+    .profile {
+        margin-left: 32px;
+        margin-right: 32px;
     }
 }
