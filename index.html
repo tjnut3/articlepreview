@@ -27,12 +27,12 @@
           <div class="container share-card" id="sharecard">
             <h1>SHARE</h1>
             <div class="icon">
-              <img src="./images/icon-facebook.svg" alt="facebook" class="facebook">
-              <img src="./images/icon-pinterest.svg" alt="twitter" class="twitter">
-              <img src="./images/icon-twitter.svg" alt="pinterest" class="pinterest">
+              <a href="#"><img src="./images/icon-facebook.svg" alt="facebook" class="facebook"></a>
+              <a href="#"><img src="./images/icon-twitter.svg" alt="twitter" class="twitter"></a>
+              <a href="#"><img src="./images/icon-pinterest.svg" alt="pinterest" class="pinterest"></a>
             </div>
             <button type="button" class="reply" onclick="Showsharebar()">
-              <img src="./images/icon-share.svg" alt="share-icon">
+              <img src="./images/icon-share.svg" alt="share-icon" id="replyimg">
             </button>
           </div>
           <div class="container text-box">
@@ -46,9 +46,19 @@
                 <h1>Michelle Appleton</h1>
                 <p>28 Jun 2020</p>
               </div>
-              <button class="reply" onclick="Showsharebar()">
-                <img src="./images/icon-share.svg" alt="reply-icon">
-              </button>
+              <div class="reply-container">
+                <div class="container share-box" id="sharebox">
+                  <h1>SHARE</h1>
+                  <div class="icon">
+                    <a href="#"><img src="./images/icon-facebook.svg" alt="facebook" class="facebook"></a>
+                    <a href="#"><img src="./images/icon-twitter.svg" alt="twitter" class="twitter"></a>
+                    <a href="#"><img src="./images/icon-pinterest.svg" alt="pinterest" class="pinterest"></a>
+                  </div>
+                </div>
+                <button class="reply" onclick="Showsharebar()" id="replyBtn">
+                  <img src="./images/icon-share.svg" alt="reply-icon">
+                </button>
+              </div>
             </div>
           </div>
       </div>
